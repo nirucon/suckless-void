@@ -1,0 +1,10 @@
+sudo xbps-install -S void-repo-multilib
+sudo xbps-install -Sy void-repo-nonfree
+sudo xbps-install nvidia
+sudo xbps-install -S libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit
+sudo xbps-install nvidia-libs-32bit
+sudo xbps-install -S steam
+
+# nomodeset in grub
+
+sudo xbps-reconfigure -f nvidia
