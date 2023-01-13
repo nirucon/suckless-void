@@ -2,7 +2,7 @@
 setxkbmap se &
 
 # nvidia workstation
-#xrandr --setprovideroutputsorce &
+#xrandr --setprovideroutputsource &
 #modesetting NVIDIA-0 &
 #xrandr --auto &
 
