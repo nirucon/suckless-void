@@ -1,5 +1,7 @@
 # nvidia workstaions
 
+Test: xbps-reconfigure -f linux
+
 # sudo vim /usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf
 
 Section "OutputClass"
