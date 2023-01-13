@@ -18,3 +18,19 @@ Section "OutputClass"
     ModulePath "/usr/lib/xorg/modules"
 EndSection
 
+---
+
+# and also at 10-amdgpu.conf: (create it if needed)
+# sudo vim /usr/share/X11/xorg.conf.d/10-amdgpu.conf
+# paste this:
+
+Section "OutputClass"
+        Identifier "AMDgpu"
+        MatchDriver "amdgpu"
+        Driver "modesetting"
+EndSection
+
+# For intel CPUs I'm not exactly sure but, if you have a file started with 10-intel something,
+# editing the driver line to Driver "modesetting" should be enough
+# then: (edit first and copy after so you don't need to edit twice)
+# sudo cp -R /usr/share/xorg..conf.d/ /etc/X11/
