@@ -1,0 +1,7 @@
+# wpa cli - change interface name if needed
+wpa_cli -i wlp2s0
+scan
+scan_results
+
+# add wifi
+wpa_passphrase <MYSSID> <passphrase> >> /etc/wpa_supplicant/wpa_supplicant.conf
