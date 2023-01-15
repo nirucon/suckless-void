@@ -33,3 +33,6 @@ alias .5='cd ../../../../..'
 alias xi='sudo xbps-install' # xbps-install
 alias xu='sudo xbps-install -Su' # xbps update
 alias xr='sudo xbps-remove' # xbps remove
+alias install='sudo xbps-install' # xbps-install
+alias update='sudo xbps-install -Su' # xbps update
+alias remove='sudo xbps-remove' # xbps remove
